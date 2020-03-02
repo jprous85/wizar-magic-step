@@ -1,3 +1,4 @@
+// TEST FILE
 $(document).ready(()=>{
     $('.wizard-steps').wizard_steps({
         gradient: true,

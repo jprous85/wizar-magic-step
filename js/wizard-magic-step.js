@@ -65,9 +65,7 @@
         }
 
         let current_step = _getCookie('current_step');
-        if (current_step !== config.current_step) {
-            config.current_step = current_step;
-        }
+        config.current_step = (current_step !== config.current_step && current_step) ? current_step : 1;
     }
 
     function _changeStep(s, type = null) {
